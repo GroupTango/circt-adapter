@@ -35,7 +35,7 @@ cmake -G Ninja ../llvm/llvm \
     -DLLVM_BUILD_SHARED_LIBS=ON \
     -DMLIR_ENABLE_BINDINGS_PYTHON=ON \
     -DCIRCT_BINDINGS_PYTHON_ENABLED=ON
-ninja -j 4     # Limits concurrency to reduce RAM usage, adjust as needed
+ninja -j 1     # Limits concurrency to reduce RAM usage, adjust as needed
 ninja check-mlir
 ninja check-circt
 ninja check-circt-integration
