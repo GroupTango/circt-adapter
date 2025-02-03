@@ -1,4 +1,4 @@
-# silicon.py
+# Use this file to test that your Python bindings work
 import circt
 from circt.ir import Context, InsertionPoint, IntegerType, Location, Module
 from circt.dialects import hw, comb
