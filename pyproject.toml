@@ -1,7 +1,7 @@
 [project]
 name = "circt-adapter"
 version = "0.0.1"
-description = "Add your description here"
+description = "Model Explorer Adapter for CIRCT generated MLIR files."
 readme = "README.md"
 
 requires-python = ">=3.12, <=3.12.8"
