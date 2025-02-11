@@ -1,5 +1,5 @@
+#!/bin/bash
 python3 -m venv venv
-source venv/bin/activate
+source $PWD/venv/bin/activate
 pip install ai-edge-model-explorer
-pip install -e .
-model-explorer --extensions=circt_adapter
+model-explorer $PWD/examples/visualize-example.mlir --extensions=circt_adapter
