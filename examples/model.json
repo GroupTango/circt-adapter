@@ -1,0 +1,164 @@
+[
+  {
+    "label": "model.json",
+    "subgraphs": [
+      {
+        "id": "test_mlir_file",
+        "nodes": [
+          {
+            "id": "ia1",
+            "label": "input",
+            "namespace": "Module A",
+            "subgraphIds": [],
+            "attrs": [
+              {
+                "key": "type",
+                "value": "hw.module"
+              },
+              {
+                "key": "in parameters",
+                "value": "%clk: !seq.clock, %in0 : i32, %in1 : i32"
+              },
+              {
+                "key": "out parameters",
+                "value": "out0 : i32"
+              }
+            ],
+            "incomingEdges": [],
+            "outputsMetadata": [],
+            "inputsMetadata": [],
+            "style": null,
+            "config": null
+          },
+          {
+            "id": "ca1",
+            "label": "comb",
+            "namespace": "Module A",
+            "subgraphIds": [],
+            "attrs": [
+              {
+                "key": "type",
+                "value": "comb.add"
+              },
+              {
+                "key": "operands",
+                "value": "%in0, %in1"
+              },
+              {
+                "key": "results",
+                "value": "%0 = i32"
+              }
+            ],
+            "incomingEdges": [
+              {
+                "sourceNodeId": "ia1",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "outputsMetadata": [],
+            "inputsMetadata": [],
+            "style": "yellow",
+            "config": null
+          },
+          {
+            "id": "ca2",
+            "label": "comb",
+            "namespace": "Module A",
+            "subgraphIds": [],
+            "attrs": [
+              {
+                "key": "type",
+                "value": "comb.add"
+              },
+              {
+                "key": "operands",
+                "value": "%in0, %in1"
+              },
+              {
+                "key": "results",
+                "value": "%0 = i32"
+              }
+            ],
+            "incomingEdges": [
+              {
+                "sourceNodeId": "ca1",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "outputsMetadata": [],
+            "inputsMetadata": [],
+            "style": [
+              {
+                "backgroundColor": "#5c0000"
+              }
+            ],
+            "config": null
+          },
+          {
+            "id": "sa1",
+            "label": "seq",
+            "namespace": "Module A",
+            "subgraphIds": [],
+            "attrs": [
+              {
+                "key": "type",
+                "value": "seq.compreg"
+              },
+              {
+                "key": "operands",
+                "value": "%0, %clk"
+              },
+              {
+                "key": "results",
+                "value": "%1 = i32"
+              }
+            ],
+            "incomingEdges": [
+              {
+                "sourceNodeId": "ca1",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "outputsMetadata": [],
+            "inputsMetadata": [],
+            "style": "#5c0000",
+            "config": null
+          },
+          {
+            "id": "oa1",
+            "label": "output",
+            "namespace": "Module A",
+            "subgraphIds": [],
+            "attrs": [
+              {
+                "key": "type",
+                "value": "hw.output"
+              },
+              {
+                "key": "operands",
+                "value": "%1"
+              }
+            ],
+            "incomingEdges": [
+              {
+                "sourceNodeId": "sa1",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "outputsMetadata": [],
+            "inputsMetadata": [],
+            "style": "#5c0000",
+            "config": null
+          }
+        ],
+        "groupNodeAttributes": null,
+        "collectionLabel": "model.json",
+        "level": 0
+      }
+    ]
+  }
+]
