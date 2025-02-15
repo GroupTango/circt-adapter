@@ -34,7 +34,9 @@ cmake -G Ninja ../llvm/llvm \
     -DLLVM_CCACHE_BUILD=ON \
     -DLLVM_BUILD_SHARED_LIBS=ON \
     -DMLIR_ENABLE_BINDINGS_PYTHON=ON \
-    -DCIRCT_BINDINGS_PYTHON_ENABLED=ON
+    -DCIRCT_BINDINGS_PYTHON_ENABLED=ON \
+    -DPython_EXECUTABLE="/usr/bin/python3.12" \
+    -DPython_INCLUDE_DIRS="/usr/include/python3.12"
 ninja -j 1     # Limits concurrency to reduce RAM usage, adjust as needed
 ninja check-mlir
 ninja check-circt
