@@ -1,1 +1,0 @@
-[{"label":"model.json","subgraphs":[{"id":"test_mlir_file","nodes":[{"id":0,"label":"Self-Contained","namespace":"A"},{"id":1,"label":"Self-Contained","namespace":"B/A"}]}]}]

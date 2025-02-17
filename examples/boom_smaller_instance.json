@@ -1,0 +1,40 @@
+[
+  {
+    "label": "model.json",
+    "subgraphs": [
+      {
+        "id": "8",
+        "nodes": [
+          { "id": "0", "label": "External", "namespace": "plusarg_reader" },
+          { "id": "1", "label": "Self-Contained", "namespace": "TLROM" },
+          {
+            "id": "2",
+            "label": "Self-Contained",
+            "namespace": "TLROM/TLMonitor_27 (I0)"
+          },
+          {
+            "id": "3",
+            "label": "External",
+            "namespace": "TLROM/TLMonitor_27 (I0)/plusarg_reader (I1)"
+          },
+          {
+            "id": "4",
+            "label": "External",
+            "namespace": "TLROM/TLMonitor_27 (I0)/plusarg_reader (I0)"
+          },
+          { "id": "5", "label": "Self-Contained", "namespace": "TLMonitor_27" },
+          {
+            "id": "6",
+            "label": "External",
+            "namespace": "TLMonitor_27/plusarg_reader (I1)"
+          },
+          {
+            "id": "7",
+            "label": "External",
+            "namespace": "TLMonitor_27/plusarg_reader (I0)"
+          }
+        ]
+      }
+    ]
+  }
+]
