@@ -1,0 +1,15 @@
+[
+  {
+    "label": "model.json",
+    "subgraphs": [
+      {
+        "id": "3",
+        "nodes": [
+          { "id": "0", "label": "Self-Contained", "namespace": "A" },
+          { "id": "1", "label": "Self-Contained", "namespace": "B" },
+          { "id": "2", "label": "Self-Contained", "namespace": "B/A (I0)" }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "label": "model.json",
+    "subgraphs": [
+      {
+        "id": "0",
+        "nodes": [
+          {
+            "attrs": [
+              { "key": "shape", "value": "oval" },
+              { "key": "fillcolor", "value": "bisque" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "A_0",
+            "incomingEdges": [],
+            "label": "+",
+            "namespace": "A"
+          },
+          {
+            "attrs": [
+              { "key": "shape", "value": "folder" },
+              { "key": "fillcolor", "value": "gainsboro" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "A_1",
+            "incomingEdges": [
+              {
+                "sourceNodeId": "A_0",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "label": "",
+            "namespace": "A"
+          },
+          {
+            "attrs": [
+              { "key": "fillcolor", "value": "lightblue" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "A_2",
+            "incomingEdges": [
+              {
+                "sourceNodeId": "A_1",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "label": "hw.output",
+            "namespace": "A"
+          },
+          {
+            "attrs": [],
+            "id": "A_3",
+            "incomingEdges": [],
+            "label": "A",
+            "namespace": "A"
+          },
+          {
+            "attrs": [
+              { "key": "fillcolor", "value": "darkgoldenrod1" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "B_4",
+            "incomingEdges": [],
+            "label": "4294967295",
+            "namespace": "B"
+          },
+          {
+            "attrs": [],
+            "id": "B_5",
+            "incomingEdges": [
+              {
+                "sourceNodeId": "B/A_3",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "label": "hw.instance",
+            "namespace": "B"
+          },
+          {
+            "attrs": [
+              { "key": "shape", "value": "oval" },
+              { "key": "fillcolor", "value": "bisque" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "B_6",
+            "incomingEdges": [
+              {
+                "sourceNodeId": "B_5",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              },
+              {
+                "sourceNodeId": "B_4",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "label": "^",
+            "namespace": "B"
+          },
+          {
+            "attrs": [
+              { "key": "fillcolor", "value": "lightblue" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "B_7",
+            "incomingEdges": [
+              {
+                "sourceNodeId": "B_6",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "label": "hw.output",
+            "namespace": "B"
+          },
+          {
+            "attrs": [],
+            "id": "B_8",
+            "incomingEdges": [],
+            "label": "B",
+            "namespace": "B"
+          },
+          {
+            "attrs": [
+              { "key": "shape", "value": "oval" },
+              { "key": "fillcolor", "value": "bisque" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "B/A_0",
+            "incomingEdges": [],
+            "label": "+",
+            "namespace": "B/A"
+          },
+          {
+            "attrs": [
+              { "key": "shape", "value": "folder" },
+              { "key": "fillcolor", "value": "gainsboro" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "B/A_1",
+            "incomingEdges": [
+              {
+                "sourceNodeId": "B/A_0",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "label": "",
+            "namespace": "B/A"
+          },
+          {
+            "attrs": [
+              { "key": "fillcolor", "value": "lightblue" },
+              { "key": "style", "value": "filled" }
+            ],
+            "id": "B/A_2",
+            "incomingEdges": [
+              {
+                "sourceNodeId": "B/A_1",
+                "sourceNodeOutputId": "0",
+                "targetNodeInputId": "0"
+              }
+            ],
+            "label": "hw.output",
+            "namespace": "B/A"
+          },
+          {
+            "attrs": [],
+            "id": "B/A_3",
+            "incomingEdges": [],
+            "label": "A",
+            "namespace": "B/A"
+          }
+        ]
+      }
+    ]
+  }
+]
